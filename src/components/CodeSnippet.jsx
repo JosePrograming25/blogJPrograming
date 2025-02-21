@@ -28,7 +28,7 @@ const CodeSnippet = ({ code, lenguage }) => {
   return (
     <div className='relative'>
       <CopyButton handleCopy={handleCopy} />
-      <SyntaxHighlighter language={lenguage} style={atelierCaveDark} className='rounded-lg shadow-lg shadow-cyan-500/5 overflow-x-auto text-base my-6'>
+      <SyntaxHighlighter language={lenguage} style={atelierCaveDark} className='rounded-lg shadow-lg shadow-violet-700/5 overflow-x-auto text-base my-8 font-stretch-ultra-condensed' customStyle={{ padding: '50px 15px 25px 30px' }}>
         {code}
       </SyntaxHighlighter>
     </div>
