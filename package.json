@@ -13,6 +13,7 @@
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
+
     "clipboard-copy": "^4.0.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",

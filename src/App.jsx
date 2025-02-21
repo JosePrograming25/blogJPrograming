@@ -1,7 +1,5 @@
 import React from 'react'
 import { aLink, article, dtitleArt, titleArticle, pArticle, subArticle } from './styles/element_basic'
-import SyntaxHighlighter from 'react-syntax-highlighter'
-import { atelierCaveDark } from 'react-syntax-highlighter/dist/esm/styles/hljs'
 import CodeSnippet from './components/CodeSnippet'
 
 const codigo = `<!DOCTYPE html>
