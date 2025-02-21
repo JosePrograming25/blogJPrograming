@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    background: #22222E;
+    color: #E9E9F4;
+    font-size: 1.114rem;
+}
+
+#root {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+
+@layer utilities {
+    .bg-CSS::before {
+      background-image: url("./images/css.png");
+    }
+
+    .bg-COPY {
+        background-image: url("./images/copy.png");
+        background-size: 30px 30px;
+        background-position: center;
+    }
+
+    .bg-CHECK {
+        background-image: url("./images/check.png");
+        background-size: 30px 30px;
+        background-position: center;
+    }
+  }
+
+.titleArticle {
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: left;
+    font-stretch: condensed;
+    position: relative;
+    margin: 0.5rem 0;
+}
+
+.titleArticle::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    position: absolute;
+    z-index: -1;
+    background-repeat: no-repeat;
+    background-size: 150px 150px;
+    background-position: center right;
+    opacity: 0.2;
+
+}
+
+@media (max-width: 768px) {
+
+    .titleArticle {
+        padding: 2rem 0;
+    }
+
+}
+
+@media (min-width: 768px) {
+
+    .titleArticle {
+        padding: 1rem 0;
+        padding-left: 110px;
+    }
+
+    .titleArticle::before {
+        width: 100px;
+        height: 100px;
+        top: 50%;
+        left: 0;
+        transform: translate(0, -50%);
+        background-size: 100px 100px;
+        opacity: 1;
+
+    }
+
+}
