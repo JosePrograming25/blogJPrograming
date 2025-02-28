@@ -82,3 +82,40 @@ body {
 
     }
 }
+
+.comment-box {
+    position: fixed;
+    bottom: 0;
+    width: 500px;
+    margin: 20px;
+    padding: 10px;
+    height: 200px;
+    color: black;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+
+}
+
+.comment-box textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    font-family: sans-serif, sans-serif;
+    font-size: 1.1rem;
+    resize: none; /* Permite al usuario redimensionar verticalmente */
+}
+
+.comment-box button {
+    padding: 8px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.comment-box button:hover {
+    background-color: #0056b3;
+}
